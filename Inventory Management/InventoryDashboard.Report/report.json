@@ -1,0 +1,162 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "ABC Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"d440af58b15ab20628f1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":222,\"y\":0,\"z\":0,\"width\":868,\"height\":616,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Stock.ABC ?\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Stock.Annual Revenue)\"}],\"Y2\":[{\"queryRef\":\"CountNonNull(Stock.SKU ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC ?\"},\"Name\":\"Stock.ABC ?\",\"NativeReferenceName\":\"ABC ?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Annual Revenue\"}},\"Function\":0},\"Name\":\"Sum(Stock.Annual Revenue)\",\"NativeReferenceName\":\"Sum of Annual Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Stock.SKU ID)\",\"NativeReferenceName\":\"Count of SKU ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Annual Revenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backgroundTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"100L\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading4'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"visualHeader\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 616.00,
+          "width": 868.00,
+          "x": 222.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"183L\"}}}}}]}}",
+      "displayName": "Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1500.00,
+      "name": "ReportSectionf7a72082a28fa7731621",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00c6d0b4db244f77ada3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.855367231638638,\"y\":284.1055789078997,\"z\":2000,\"width\":680.3149606299212,\"height\":174.69816272965878,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Stock.ABC ?\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Stock.XYZ?\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(Stock.Value in WH)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC ?\"},\"Name\":\"Stock.ABC ?\",\"NativeReferenceName\":\"ABC ?\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"XYZ?\"},\"Name\":\"Stock.XYZ?\",\"NativeReferenceName\":\"XYZ?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Value in WH\"}},\"Function\":0},\"Name\":\"CountNonNull(Stock.Value in WH)\",\"NativeReferenceName\":\"Sum of Value in WH\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}},\"selector\":{\"metadata\":\"CountNonNull(Stock.Value in WH)\"}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeaderFlashyRows'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Distribution of Current Vale in WH'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 174.70,
+          "width": 680.31,
+          "x": 7.86,
+          "y": 284.11,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"026e3af7ff197f9d3af5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":676.188700564972,\"y\":217.32080200501258,\"z\":0,\"width\":600,\"height\":443.33333333333337,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Stock.ABC Rank\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(Stock.Cummalative Share)\"}],\"Series\":[{\"queryRef\":\"Stock.ABC ?\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC Rank\"},\"Name\":\"Stock.ABC Rank\",\"NativeReferenceName\":\"ABC Rank\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Cummalative Share\"}},\"Function\":1},\"Name\":\"Avg(Stock.Cummalative Share)\",\"NativeReferenceName\":\"Average of Cummalative Share\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC ?\"},\"Name\":\"Stock.ABC ?\",\"NativeReferenceName\":\"ABC ?\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Cummalative Share\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"'this graph shows which category of product have how much cumulative shares. A value has 70% share hence proving pareto principle.'\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ABC Distribution'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 443.33,
+          "width": 600.00,
+          "x": 676.19,
+          "y": 217.32,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"126e5511548e26279c37\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.522033898305153,\"y\":716,\"z\":7000,\"width\":570,\"height\":578,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Stock.SKU ID\"},{\"queryRef\":\"Stock.Current Stock Quantity\"},{\"queryRef\":\"Stock.Average Lead Time (days)\"},{\"queryRef\":\"Stock.Safety stock\"},{\"queryRef\":\"Stock.Stock Status\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"},\"Name\":\"Stock.SKU ID\",\"NativeReferenceName\":\"SKU ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Current Stock Quantity\"},\"Name\":\"Stock.Current Stock Quantity\",\"NativeReferenceName\":\"Current Stock Quantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Average Lead Time (days)\"},\"Name\":\"Stock.Average Lead Time (days)\",\"NativeReferenceName\":\"Average Lead Time (days)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Safety stock\"},\"Name\":\"Stock.Safety stock\",\"NativeReferenceName\":\"Safety stock\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Stock Status\"},\"Name\":\"Stock.Stock Status\",\"NativeReferenceName\":\"Stock Status\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Safety stock\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 578.00,
+          "width": 570.00,
+          "x": 7.52,
+          "y": 716.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"1f77644607f06d774176\",\"layouts\":[{\"id\":0,\"position\":{\"x\":975.8553672316386,\"y\":729.6541353383459,\"z\":7001,\"width\":288,\"height\":274,\"tabOrder\":7001}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"Stock.Stock Reorder Count\"}],\"MaxValue\":[{\"queryRef\":\"CountNonNull(Stock.Value in WH)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Stock Reorder Count\"},\"Name\":\"Stock.Stock Reorder Count\",\"NativeReferenceName\":\"Stock Reorder Count\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Value in WH\"}},\"Function\":5},\"Name\":\"CountNonNull(Stock.Value in WH)\",\"NativeReferenceName\":\"Count of Value in WH\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Stock Reorder Count\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of SKU need Reorder'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.00,
+          "width": 288.00,
+          "x": 975.86,
+          "y": 729.65,
+          "z": 7001.00
+        },
+        {
+          "config": "{\"name\":\"357678ee156730e9081d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":276,\"y\":0,\"z\":7004,\"width\":800,\"height\":90,\"tabOrder\":7004}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inventory Management Dashboard\",\"textStyle\":{\"fontSize\":\"36pt\",\"color\":\"#6b007b\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 800.00,
+          "x": 276.00,
+          "y": 0.00,
+          "z": 7004.00
+        },
+        {
+          "config": "{\"name\":\"4f053aaa6f42e6e2c994\",\"layouts\":[{\"id\":0,\"position\":{\"x\":684.5220338983054,\"y\":88.98746867167924,\"z\":4000,\"width\":185,\"height\":106.66666666666667,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Stock.Inventory Turnover Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Inventory Turnover Ratio\"},\"Name\":\"Stock.Inventory Turnover Ratio\",\"NativeReferenceName\":\"Inventory Turnover Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Inventory Turnover Ratio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 106.67,
+          "width": 185.00,
+          "x": 684.52,
+          "y": 88.99,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"75ce10e3248645466a88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":861.1887005649719,\"y\":89.24993586328029,\"z\":5000,\"width\":230.13123359580052,\"height\":105.8267716535433,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Stock.Value in WH)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Value in WH\"}},\"Function\":0},\"Name\":\"CountNonNull(Stock.Value in WH)\",\"NativeReferenceName\":\"Sum of Value in WH\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Value in WH\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 105.83,
+          "width": 230.13,
+          "x": 861.19,
+          "y": 89.25,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"88dfa197ddd555143426\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1067.8553672316386,\"y\":88.98746867167924,\"z\":6000,\"width\":196.66666666666669,\"height\":106.66666666666667,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(Stock.SKU ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"}},\"Function\":2},\"Name\":\"Min(Stock.SKU ID)\",\"NativeReferenceName\":\"Count of SKU ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 106.67,
+          "width": 196.67,
+          "x": 1067.86,
+          "y": 88.99,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"b45cb778c22f00b3a7f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.855367231638638,\"y\":89.24993586328029,\"z\":1000,\"width\":668.5564304461942,\"height\":174.69816272965878,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Stock.ABC ?\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Stock.XYZ?\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(Stock.Annual Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC ?\"},\"Name\":\"Stock.ABC ?\",\"NativeReferenceName\":\"ABC ?\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"XYZ?\"},\"Name\":\"Stock.XYZ?\",\"NativeReferenceName\":\"XYZ?\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Annual Revenue\"}},\"Function\":0},\"Name\":\"CountNonNull(Stock.Annual Revenue)\",\"NativeReferenceName\":\"Sum of Annual Revenue\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}}},\"selector\":{\"metadata\":\"CountNonNull(Stock.Annual Revenue)\"}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeaderFlashyRows'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Distribution of Annual Revenue'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 174.70,
+          "width": 668.56,
+          "x": 7.86,
+          "y": 89.25,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c835196997061282044a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.855367231638638,\"y\":497.4389122412331,\"z\":3000,\"width\":680.3149606299212,\"height\":174.69816272965878,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Stock.ABC ?\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Stock.XYZ?\",\"active\":true}],\"Values\":[{\"queryRef\":\"Stock.Inventory Turnover Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC ?\"},\"Name\":\"Stock.ABC ?\",\"NativeReferenceName\":\"ABC ?\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"XYZ?\"},\"Name\":\"Stock.XYZ?\",\"NativeReferenceName\":\"XYZ?\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Inventory Turnover Ratio\"},\"Name\":\"Stock.Inventory Turnover Ratio\",\"NativeReferenceName\":\"Inventory Turnover Ratio\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeaderFlashyRows'\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Distribution of Current Vale in WH'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 174.70,
+          "width": 680.31,
+          "x": 7.86,
+          "y": 497.44,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d5396c43ea2254b0735a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":578,\"y\":1006,\"z\":7003,\"width\":702,\"height\":288,\"tabOrder\":7003}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Weekly demand sheet.sales Amount)\"}],\"Category\":[{\"queryRef\":\"Weekly demand sheet.Week date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"Weekly demand sheet\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"sales Amount\"}},\"Function\":0},\"Name\":\"Sum(Weekly demand sheet.sales Amount)\",\"NativeReferenceName\":\"Sum of sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Week date\"},\"Name\":\"Weekly demand sheet.Week date\",\"NativeReferenceName\":\"Week date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Week date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue Flow'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 702.00,
+          "x": 578.00,
+          "y": 1006.00,
+          "z": 7003.00
+        },
+        {
+          "config": "{\"name\":\"df2d9db2c1e0e957ec08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":589.5220338983054,\"y\":728.9874686716793,\"z\":7002,\"width\":375,\"height\":273.33333333333337,\"tabOrder\":7002}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Stock.Stock Status\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Stock.SKU ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Stock\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Stock Status\"},\"Name\":\"Stock.Stock Status\",\"NativeReferenceName\":\"Stock Status\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Stock.SKU ID)\",\"NativeReferenceName\":\"Count of SKU ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SKU ID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stock Status'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 273.33,
+          "width": 375.00,
+          "x": 589.52,
+          "y": 728.99,
+          "z": 7002.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

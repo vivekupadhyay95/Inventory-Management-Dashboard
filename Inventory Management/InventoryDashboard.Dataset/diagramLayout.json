@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 377,
+            "y": 246
+          },
+          "nodeIndex": "Past Orders",
+          "nodeLineageTag": "e7e78381-5ddd-4238-8e99-e867dfa27dbe",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 16,
+            "y": 0
+          },
+          "nodeIndex": "Stock",
+          "nodeLineageTag": "c35dc790-d00b-4fdb-889a-fec5c22b754a",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5.9607679999991205,
+            "y": 495.82966400000049
+          },
+          "nodeIndex": "Weekly demand sheet",
+          "nodeLineageTag": "8bf51416-8b12-4a67-ba62-e42167e25806",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1181,
+            "y": 99
+          },
+          "nodeIndex": "Sku table",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 634.9438340553005,
+            "y": 47.462149533414831
+          },
+          "nodeIndex": "WeeklyDates",
+          "nodeLineageTag": "dbb3f320-9379-4aba-8c8c-543e8076b74a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 56.447393005377677,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
